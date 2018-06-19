@@ -29,6 +29,7 @@
 				<li><a href="userinfo"><span class="glyphicon glyphicon-user"></span> ${username}</a></li>
 				<li><a href="record?type=0"><span class="glyphicon glyphicon-film"></span> Cart</a></li>
 				<li><a href="record?type=1"><span class="glyphicon glyphicon-list"></span> History</a></li>
+				<li><a href="preAddFilm"><span class="glyphicon glyphicon-list"></span> Add film</a></li>
 				<li><a href="logout"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
 			</c:when>
 			<c:otherwise>

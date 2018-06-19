@@ -1,5 +1,7 @@
 package com.eshop.controller;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -20,6 +22,7 @@ public class FilmController {
 
 	/**
 	 * 根据类别查询电影（0：漫威；1：DC；2：其他）
+	 * 
 	 * @param request
 	 * @return
 	 */
@@ -44,6 +47,30 @@ public class FilmController {
 		mv.addObject("films", films);
 		mv.setViewName("films");
 		return mv;
+	}
+
+	@RequestMapping(value = "preAddFilm")
+	public ModelAndView preAddFilm() {
+		return new ModelAndView("addFilm");
+	}
+
+	@RequestMapping(value = "addFilm")
+	public ModelAndView addFilm(HttpServletRequest request) throws ParseException {
+		Film film = new Film();
+		film.setType(Integer.parseInt(request.getParameter("type")));
+		film.setTitle(request.getParameter("title"));
+		film.setPrice(Double.parseDouble(request.getParameter("price")));
+		film.setLevel("PG-13");
+		film.setTags(request.getParameter("tags"));
+		film.setDuration(request.getParameter("duration"));
+		film.setDate(new SimpleDateFormat("yyyy-MM-dd").parse(request.getParameter("date")));
+		film.setIntroduction(request.getParameter("introduction"));
+		film.setDirectors(request.getParameter("directors"));
+		film.setWriters(request.getParameter("writers"));
+		film.setStars(request.getParameter("stars"));
+		film.setImage("default_film.jpg");
+		filmService.save(film);
+		return new ModelAndView("redirect:films?type=" + request.getParameter("type"));
 	}
 
 }

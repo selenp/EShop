@@ -23,6 +23,8 @@ public class User implements Serializable {
 	private String username;
 	@Column(name = "password")
 	private String password;
+	@Column(name = "type")
+	private int type;
 	@Column(name = "phone")
 	private String phone;
 	@Column(name = "email")
@@ -72,6 +74,14 @@ public class User implements Serializable {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	public int getType() {
+		return type;
+	}
+
+	public void setType(int type) {
+		this.type = type;
 	}
 
 	public String getPhone() {

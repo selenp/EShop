@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Cart</title>
-<link rel="shortcut icon" href="favicon.ico" >
+<link rel="shortcut icon" href="favicon.ico">
 <!--配置Bootstrap-->
 <link rel="stylesheet"
 	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -37,7 +37,9 @@
 
 	<div id="page">
 		<div id="content" class="grid-c">
-		    <c:if test="${stauts != null}"><h3>${message}</h3></c:if>
+			<c:if test="${stauts != null}">
+				<h3>${message}</h3>
+			</c:if>
 			<table cellspacing="0" cellpadding="0" class="order-table">
 				<thead>
 					<tr>
@@ -71,7 +73,8 @@
 					</c:forEach>
 					<!-- 分页行 -->
 					<tr class="shop-total blue-line">
-						<td colspan="1"><a href="pay"><button type="button" class="btn btn-warning">Checkout</button></a></td>
+						<td colspan="1"><a href="pay"><button type="button"
+									class="btn btn-warning">Checkout</button></a></td>
 						<td colspan="4">
 							<div id="pagination">
 								<c:if test="${page.totalPages != 0 && page.currentPage != 1}">
@@ -172,7 +175,7 @@
 	</script>
 
 	<!--页脚-->
-    <footer
+	<footer
 		style="width: 100%;
     position:absolute;
     bottom:0px;

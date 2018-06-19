@@ -39,7 +39,7 @@ public class FilmDaoImpl implements BasicDao<Film> {
 
 	@Override
 	public void save(Film t) {
-
+		getCurrentSession().save(t);
 	}
 
 	/* 
@@ -48,7 +48,7 @@ public class FilmDaoImpl implements BasicDao<Film> {
 	 */
 	@Override
 	public List<Film> findListByKey(String key) {
-		String hql = "from Film where type=?0";
+		String hql = "from Film where type=?0 order by id desc";
 		Query query = getCurrentSession().createQuery(hql).setParameter(0, Integer.parseInt(key));
 		List<Film> list = query.list();
 		return list;
@@ -62,7 +62,7 @@ public class FilmDaoImpl implements BasicDao<Film> {
 	@Override
 	public void deleteById(long id) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }

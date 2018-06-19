@@ -46,6 +46,7 @@ public class UserController {
 				response.setHeader("refresh", "2;url=index.jsp"); // 两秒后跳转至index
 				request.getSession().setAttribute("username", user.getUsername()); // 在本次请求session中保存用户信息
 				request.getSession().setAttribute("uid", user.getId());
+				request.getSession().setAttribute("user", user);
 				request.getSession().setAttribute("flag", true); // flag用于记录是否处于登录状态，更新导航栏
 			} else {
 				mv.addObject("message", "Wrong password");
@@ -73,6 +74,7 @@ public class UserController {
 		String street = request.getParameter("street");
 		String apartment = request.getParameter("apartment");
 		User user = new User(username, password, phone, email, city, street, apartment);
+		user.setType(0);
 		userService.save(user);
 		mv.setViewName("signin");
 		return mv;

@@ -41,7 +41,7 @@ public class FilmServiceImpl implements BasicService<Film> {
 
 	@Override
 	public void save(Film t) {
-
+		filmDao.save(t);
 	}
 
 	@Override
