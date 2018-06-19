@@ -13,7 +13,7 @@ My enviroment: Eclipse Java EE IDE for Web Developers + IDK1.8 + Tomcat8.0 + MyS
 
 2.spring.xml Configuration
 * You can find it under the WebContent/WEB-INF/lib/spring.xml.
-* You can edit the configuration start with the comment:配置数据源
+* You can edit the configuration start with the comment:<!-- 配置数据源-->
 
 ## To test the application
 Visit the home page at: http://localhost:8080/EShop/.
