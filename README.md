@@ -1,4 +1,5 @@
-# Northeastern University Enterprise Software Design Final Project based on SpringMVC & Hibernate
+# Dynamic Web Application
+### based on SpringMVC & Hibernate
 You can find the video tutorial at https://www.youtube.com/watch?v=rgiO_nwGDlo&t=0s.
 
 
