@@ -23,9 +23,21 @@ My enviroment: Eclipse Java EE IDE for Web Developers + IDK1.8 + Tomcat8.0 + MyS
 Visit the home page at: http://localhost:8080/EShop/.
 
 ## Functions
-* User register and login with validation
-* User inforamation context validation using Jquery
-* User password protect (MD5 Message-Digest Algorithm)
-* Add items to cart and checkout
+* User register and login with validation.
+![image](https://github.com/selenp/EShop/blob/master/WebContent/images/register.png)
+![image](https://github.com/selenp/EShop/blob/master/WebContent/images/login.png)
+
+* User inforamation context validation using Jquery.
+![image](https://github.com/selenp/EShop/blob/master/WebContent/images/validation.png)
+
+* User password protect (MD5 Message-Digest Algorithm).
+![image](https://github.com/selenp/EShop/blob/master/WebContent/images/md5.png)
+
+* Add items to cart and checkout.
+![image](https://github.com/selenp/EShop/blob/master/WebContent/images/cart.png)
+
 * View order history.
+![image](https://github.com/selenp/EShop/blob/master/WebContent/images/history.png)
+
 * Admin login to manage items.
+![image](https://github.com/selenp/EShop/blob/master/WebContent/images/add.png)
