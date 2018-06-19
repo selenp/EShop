@@ -25,7 +25,7 @@ Visit the home page at: http://localhost:8080/EShop/.
 ## Functions
 * User register and login with validation
 * User inforamation context validation using Jquery
-* User password MD5 Message-Digest Algorithm
+* User password protect (MD5 Message-Digest Algorithm)
 * Add items to cart and checkout
 * View order history.
 * Admin login to manage items.
