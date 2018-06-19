@@ -15,6 +15,7 @@ My enviroment: Eclipse Java EE IDE for Web Developers + IDK1.8 + Tomcat8.0 + MyS
 * You can find it under the WebContent/WEB-INF/lib/spring.xml.
 * You can configure your datasource here:
 ![Image text]:(https://github.com/selenp/EShop/blob/master/WebContent/images/configure.png)
+![image](http://github.com/itmyhome2013/readme_add_pic/raw/master/images/nongshalie.jpg)
 
 ## To test the application
 Visit the home page at: http://localhost:8080/EShop/.
