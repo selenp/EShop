@@ -2,6 +2,9 @@
 
 You can find the video tutorial at https://www.youtube.com/watch?v=rgiO_nwGDlo&t=0s.
 
+## Basic Project Catalogue
+![image](https://github.com/selenp/EShop/blob/master/WebContent/images/structure.png)
+
 
 ## To run the application
 My enviroment: Eclipse Java EE IDE for Web Developers + IDK1.8 + Tomcat8.0 + MySQL
